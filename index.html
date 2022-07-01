@@ -1,1 +1,341 @@
-<p style="text-align: center;"> Aktualizace ...</p> <p> &nbsp;</p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative
+		}
+
+		.bee-row-1,
+		.bee-row-1 .bee-row-content,
+		.bee-row-2,
+		.bee-row-3 {
+			background-repeat: no-repeat
+		}
+
+		body {
+			background-color: #fff;
+			color: #000;
+			font-family: Arial, Helvetica Neue, Helvetica, sans-serif
+		}
+
+		.bee-row-1 .bee-col-2 .bee-block-1 a,
+		.bee-row-2 .bee-col-1 .bee-block-11 a,
+		.bee-row-2 .bee-col-1 .bee-block-3 a,
+		.bee-row-2 .bee-col-1 .bee-block-4 li a,
+		.bee-row-2 .bee-col-1 .bee-block-5 a,
+		.bee-row-2 .bee-col-1 .bee-block-9 a,
+		a {
+			color: #0068a5
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		p {
+			margin: 0
+		}
+
+		.bee-row-content {
+			max-width: 1170px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content .bee-col-w3 {
+			flex-basis: 25%
+		}
+
+		.bee-row-content .bee-col-w9 {
+			flex-basis: 75%
+		}
+
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		.bee-icon .bee-icon-label-right a {
+			text-decoration: none
+		}
+
+		.bee-divider,
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-divider .center,
+		.bee-image .bee-center {
+			margin: 0 auto
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1,
+		.bee-row-2 .bee-col-1 .bee-block-10 {
+			width: 100%
+		}
+
+		.bee-list ul {
+			margin: 0;
+			padding: 0
+		}
+
+		.bee-icon,
+		.bee-icon .bee-icon-image,
+		.bee-icon .bee-icon-label-right {
+			display: inline-block
+		}
+
+		.bee-icon {
+			vertical-align: middle
+		}
+
+		.bee-icon .bee-icon-image {
+			vertical-align: middle;
+			margin-right: -4px
+		}
+
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+
+		.bee-paragraph {
+			overflow-wrap: anywhere
+		}
+
+		@media (max-width:768px) {
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+		}
+
+		.bee-row-1 .bee-row-content {
+			color: #000
+		}
+
+		.bee-row-1 .bee-col-1,
+		.bee-row-1 .bee-col-2,
+		.bee-row-2 .bee-col-1,
+		.bee-row-3 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-1 .bee-col-2 .bee-block-1,
+		.bee-row-2 .bee-col-1 .bee-block-1,
+		.bee-row-2 .bee-col-1 .bee-block-11,
+		.bee-row-2 .bee-col-1 .bee-block-3,
+		.bee-row-2 .bee-col-1 .bee-block-4,
+		.bee-row-2 .bee-col-1 .bee-block-5,
+		.bee-row-2 .bee-col-1 .bee-block-6,
+		.bee-row-2 .bee-col-1 .bee-block-9 {
+			padding: 10px
+		}
+
+		.bee-row-2 .bee-row-content,
+		.bee-row-3 .bee-row-content {
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-2,
+		.bee-row-2 .bee-col-1 .bee-block-7,
+		.bee-row-2 .bee-col-1 .bee-block-8 {
+			width: 100%;
+			text-align: center
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 {
+			color: #9d9d9d;
+			font-family: inherit;
+			font-size: 15px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			text-align: center
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-11,
+		.bee-row-2 .bee-col-1 .bee-block-3,
+		.bee-row-2 .bee-col-1 .bee-block-4,
+		.bee-row-2 .bee-col-1 .bee-block-5,
+		.bee-row-2 .bee-col-1 .bee-block-9 {
+			color: #000;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 120%;
+			text-align: left;
+			direction: ltr;
+			letter-spacing: 0
+		}
+
+		.bee-row-1 .bee-col-2 .bee-block-1 p:not(:last-child),
+		.bee-row-2 .bee-col-1 .bee-block-11 p:not(:last-child),
+		.bee-row-2 .bee-col-1 .bee-block-3 p:not(:last-child),
+		.bee-row-2 .bee-col-1 .bee-block-5 p:not(:last-child),
+		.bee-row-2 .bee-col-1 .bee-block-9 p:not(:last-child) {
+			margin-bottom: 16px
+		}
+
+		.bee-row-1 .bee-col-2 .bee-block-1 {
+			color: #000;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 120%;
+			text-align: right;
+			direction: ltr;
+			letter-spacing: 0
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-4 ul {
+			list-style-type: revert;
+			list-style-position: inside
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-4 li:not(:last-child) {
+			margin-bottom: 0
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-4 li ul {
+			margin-top: 0
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-4 li li {
+			margin-left: 40px
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon {
+			margin-left: 0;
+			margin-right: 0
+		}
+	</style>
+</head>
+<body>
+<div class="bee-page-container">
+<div class="bee-row bee-row-1">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w3">
+<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/turbina.png" style="max-width:292px;"/></div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w9">
+<div class="bee-block bee-block-1 bee-paragraph">
+<p><strong>Asociace strojních inženýrů ČR, Klub Brno, p.s.</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-2">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="center" style="border-top:1px solid #BBBBBB;width:100%;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-heading">
+<h1 style="color:#555555;font-size:23px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:center;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;">Vítejte na stránkách A.S.I. - Klub Brno, p.s. </h1>
+</div>
+<div class="bee-block bee-block-3 bee-paragraph">
+<p>Pobočný spolek Asociace strojních inženýrů ČR, Klub Brno, usiluje o realizovat programového prohlášení A.S.I.  v rámci brněnské aglomerace , tedy zejména:</p>
+</div>
+<div class="bee-block bee-block-4 bee-list">
+<ul>
+<li>všestranně napomáhat rozvoji strojního inženýrství v ČR</li>
+<li>pomáhat uplatnění strojních inženýrů v hospodářské, vědecké a pedagogické činnosti</li>
+<li>zvyšovat odbornou úroveň československého strojírenství systémovým pojetím konstruování strojů a výrobních technologií</li>
+</ul>
+</div>
+<div class="bee-block bee-block-5 bee-paragraph">
+<p>Jeho členové si uvědomují význam strojírenství pro český průmysl a pro současnou společnost.Vždyť kvalita a množství takových výrobků, jakými jsou auta, motocykly, letadla, lodě, vlakové soupravy, rakety atd. závisí zejména na strojírenství, stejně tak jako kvalita a množství výrobních strojů, které strojírenské, ale další typy výrob, produkují.</p>
+<p>Členové pobočné spolku A.S.I. Klub Brno se také podílejí svým odborným a pracovním úsilím na realizaci konceptu <strong>Industry 4.0</strong>, který představuje realizaci myšlenek čtvrté průmyslové revoluce, zohledňující současný trend digitalizace, s ní související automatizaci výroby. zavedením „chytrých továren“, které budou využívat kyberneticko-fyzikální systémy.</p>
+</div>
+<div class="bee-block bee-block-6 bee-divider">
+<div class="center" style="border-top:1px solid #BBBBBB;width:100%;"></div>
+</div>
+<div class="bee-block bee-block-7 bee-heading">
+<h1 style="color:#9ac9db;font-size:23px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:center;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;"><strong>Příspěvky k připomenutí dvou zajímavých  výročí</strong> </h1>
+</div>
+<div class="bee-block bee-block-8 bee-heading">
+<h1 style="color:#555555;font-size:23px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:left;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;"><strong>Správnost návrhu mostní konstrukce od Leonarda da Vinciho </strong><strong>potvrzena po 500 letech</strong> </h1>
+</div>
+<div class="bee-block bee-block-9 bee-paragraph">
+<p>Na stránkách sítě Internet byla prezentována zpráva amerických vědců z MIT, kteří experimentálně ověřili a potvrdili genialitu konstrukce mostu, který před 500 lety navrhl renesanční vědec, umělec a vynálezce Leonardo da Vinci.</p>
+<p>Tato zpráva potvrzuje, že velmi pokrokové inovační myšlenky se často nerealizují právě proto, že jsou opravdu novátorské a současníkům se zdají být vysoce riskantní, neověřené a pochybuje se o jejich správnosti!</p>
+<p>V době rozkvětu Osmanské říše v roce 1502 zamýšlel její sultán Bájezíd II. postavit spojnici Istanbulu a sousední Galaty kvůli lepšímu dopravnímu spojení a most se nabízel jako možné řešení. Za tehdejších možností to byl však velmi odvážný, těžko uskutečnitelný úkol. Zprávy o tomto záměru se rychle rozšířily nejen po tehdejší Osmanské říši, ale i mimo ni. Realizovat propojení vzdálených břehů budováním spojnice břehů s možností průjezdu plachetnic pod jednolitým dlouhým obloukem využívaným kočáry, nebylo nic jednoduchého na tehdejší dobu.  Když se o tom dověděl Leonardo, zúčastnil se „výběrového řízení“ tím, že sultánovi poslal svůj návrh. Ten však se zdál být na tehdejší dobu příliš „odvážný“ nejen sultánovi, ale i rádcům, takže nebyl realizován, zvláště když si posuzovatelé uvědomovali, že se jedná o stavbu v místech, kde dochází k zemětřesením a velký most s jedním obloukem se zdál velmi rizikovým řešením. Mosty té doby byly obvykle realizovány s použitím řady půlkruhových oblouků a vzdálenost mezi plánovanými místy spojení obou měst by standardně vyžadovala nejméně desítku takových rovnoměrně rozložených pilířů a omezila by námořní plavbu.</p>
+<p>Naštěstí se dochoval dopis s návrhem. K dopisu, který sultán obdržel, byl přiložen poznámkový blok plný náčrtů, které popisovaly překlenutí potřebné vzdálenost pomocí jediného zploštělého oblouku podpíraného základnami na obou koncích. To umožnilo americkým nadšencům z MIT realizovat malou repliku v měřítku 1:500 o velikosti asi 81 centimetrů, která byla sestavena ze 126 bloků různých tvarů a velikostí vyrobených s pomocí 3D aditivní technologie. Moderní možnosti současné doby dovolily náročný proces modelování uspíšit a otestovat proveditelnost návrhu.</p>
+<p>Da Vinciho stavební projekt stoprocentně fungoval!  Most by zůstal silný a stabilní i bez použití malty nebo jiných spojovacích materiálů. Tým technologického institutu si také uvědomil, že úžasný tvůrce dokonce navrhl způsob, jak minimalizovat nežádoucí boční pohyby struktury, což by mohlo způsobit zřícení. Patky na obou stranách klenuté lávky byly vysunuty do stran, aby stavbu podpíraly v bočním směru. Stavba by dokonce přežila většinu častých zemětřesení díky dvěma pohyblivým platformám.</p>
+</div>
+<div class="bee-block bee-block-10 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/model_mostu.png" style="max-width:501px;"/></div>
+
+<div class="bee-block bee-block-11 bee-paragraph">
+<p>Zmenšený model mostu – zdroj:</p>
+<p><a href="https://gizmodo.com/mit-confirms-a-bridge-leonardo-da-vinci-designed-500-ye-1838937809">https://gizmodo.com/mit-confirms-a-bridge-leonardo-da-vinci-designed-500-ye-1838937809</a></p>
+<p>Poučen&iacute; i pro současnou inžen&yacute;rskou praxi::</p>
+<ul>
+<li>Geni&aacute;ln&iacute; inovativn&iacute; n&aacute;pady neb&yacute;vaj&iacute; obvykle pochopeny, proto je potřeba je důkladně vysvětlit a dokumentovat!</li>
+<li>I zd&aacute;nlivě &bdquo;ztře&scaron;těn&eacute;&ldquo; n&aacute;pady by se neměly ihned z&aacute;sadně odm&iacute;tat, pokud se důkladně nepodrob&iacute; kritick&eacute; anal&yacute;ze nebo experiment&aacute;lně nepotvrd&iacute; jejich nepromy&scaron;lenost např. modelov&aacute;n&iacute;m a simulac&iacute;</li>
+<li>Nerealizovan&eacute; n&aacute;pady je dobr&eacute; &bdquo;archivovat&ldquo;! Později se může naj&iacute;t způsob, jak je využ&iacute;t.</li>
+</ul>
+<div class="bee-block bee-block-6 bee-divider">
+<div class="center" style="border-top:1px solid #BBBBBB;width:100%;"></div>
+</div>
+
+<div class="bee-block bee-block-8 bee-heading">
+<h1 style="color:#555555;font-size:23px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:left;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;"><strong>600 let husitské vozové hradby</strong><strong>potvrzena po 500 letech</strong> </h1>
+</div>
+
+<div class="bee-block bee-block-5 bee-paragraph">
+	<p>Na zač&aacute;tku roku 2020 je možno si připomenout, že před 600 lety použil husitsk&yacute; hejtman Jan Žižka z&nbsp;Trocnova poprv&eacute; vozovou hradbu k&nbsp;obraně houfu Pražanů, kteř&iacute; směřovali do jejich - tehdy vznikaj&iacute;c&iacute; z&aacute;kladny &ndash; města T&aacute;bor. Vojensk&eacute; střetnut&iacute;, ve kter&eacute;m k&nbsp;tomu do&scaron;lo, proběhlo v&nbsp;zimě na rozhran&iacute; let 1419 - 1420 nedaleko Plzně směrem na severoz&aacute;pad u vesnice Nekm&iacute;ř. Tedy nikoliv, jak se mylně uv&aacute;d&iacute;, že prvn&iacute; použit&iacute; vozov&eacute; hradby proběhlo v&nbsp;bitvě u Sudoměře.</p>
+	<p>Žižka pot&eacute;, co se rozhodl odej&iacute;t v&nbsp;roce 1419 z&nbsp;Prahy, když pražsk&eacute; mě&scaron;ťanstvo uzavřelo na jaře př&iacute;měř&iacute; s reprezentanty kr&aacute;le Zikmunda, se rozhodl nesměřovat hned k T&aacute;boru, ale přečkat zimu v&nbsp;Plzni. Když se v&nbsp;Plzni ke konci roku ut&aacute;bořil, podnikal na okoln&iacute; hrady, kter&eacute; patřily nepř&aacute;telům husitů, kr&aacute;tk&eacute; v&yacute;pady. Pr&aacute;vě na jedn&eacute; takov&eacute; akci, kdy opustil ležen&iacute; v Plzni s 300 muži a sedmi vozy, ho zaskočil poměrně velk&yacute; odd&iacute;l jezdců, kter&yacute;m velel Bohuslav ze &Scaron;vamberka. Žižka vezl na vozech beranidla, žebř&iacute;ky a střeln&eacute; zbraně, potřebn&eacute; při dob&yacute;v&aacute;n&iacute; hradů a tvrz&iacute;. Tyto těžk&eacute; vozy měl zřejmě už upraven&eacute; tak, aby se s&nbsp;nimi mohl k&nbsp;hradb&aacute;m a vstupn&iacute;m br&aacute;n&aacute;m co nejv&iacute;c přibl&iacute;žit. Jak je uvedeno o t&eacute;to bitvě ve Star&yacute;ch letopisech česk&yacute;ch: Pan Bohuslav, kter&yacute; měl přes dva tis&iacute;ce j&iacute;zdn&iacute;ch i pě&scaron;&iacute;ch, za&uacute;točil na Žižku s j&iacute;zdn&iacute;m houfem a myslel, že je v&scaron;echny na hlavu potře. Ale Žižka ho odrazil od vozů a zabil Hynka z&nbsp;Nekměře, pak t&aacute;hl d&aacute;l svou cestou a pobořil tři opevněn&eacute; tvrze.</p>
+	<p>Zm&iacute;nka v&nbsp;textu &bdquo;Žižka ho odrazil od vozů&ldquo; vysvětluje, že Žižkův poměrně mal&yacute; ozbrojen&yacute; houf, nemohl čelit tak početn&eacute; přesile j&iacute;zdn&iacute;ch a pě&scaron;&iacute;ch nepř&aacute;tel v&nbsp;otevřen&eacute;m boji. Žižka zřejmě z&nbsp;vozů vytvořil obrann&yacute; kruh a pomoc&iacute; střeln&yacute;ch zbran&iacute;, samostř&iacute;lů i lehk&yacute;ch paln&yacute;ch zbran&iacute;, &uacute;točn&iacute;ky odrazil. V&nbsp;t&eacute;to &scaron;arv&aacute;tce si prvně zřejmě Žižka potvrdil, jak se lze efektivně br&aacute;nit převaze ryt&iacute;řsk&eacute; j&iacute;zdy prostřednictv&iacute;m střelby od vozov&eacute; hradby proti početn&yacute;m &uacute;točn&iacute;kům. Vozy pro takovou činnost postupně zdokonalil a přizpůsobil jim i taktiku husitsk&eacute;ho vojska, takže tento způsob boje mu v&nbsp;pozděj&scaron;&iacute;ch střetnut&iacute;ch mnohokr&aacute;t přinesl velk&aacute; v&iacute;tězstv&iacute;.</p>
+	<p>Historie připisuje husitsk&yacute;m odd&iacute;lům řadu skutečnost&iacute;, kter&yacute;mi obohatili světov&eacute; vojenstv&iacute;. Jejich na tu dobu početn&eacute; a intenzivn&iacute; využ&iacute;v&aacute;n&iacute; lehk&yacute;ch střeln&yacute;ch zbran&iacute; způsobilo, že slova pistole a houfnice obohatila světovou odbornou terminologii vojenstv&iacute;: &bdquo;pistole&ldquo; &ndash; pro označen&iacute; kr&aacute;tk&eacute; ručn&iacute; paln&eacute; zbraně a &bdquo;houfnice&ldquo; &ndash; pro označen&iacute; mal&eacute;ho mobiln&iacute;ho děla středn&iacute; r&aacute;že krat&scaron;&iacute; než tarasnice. Použ&iacute;vala se na nepřesnou střelbu do houfů, proto houfnice. V&nbsp;současn&eacute; době se označen&iacute; houfnice použ&iacute;v&aacute; (na rozd&iacute;l od kan&oacute;nů, určen&yacute;ch k př&iacute;m&eacute; palbě) pro děla určen&aacute; k palbě nepř&iacute;m&eacute; tzv. po balistick&eacute; křivce (dovoluje tedy stř&iacute;let na c&iacute;le doslova &bdquo;za kopcem&ldquo;.</p>
+	<p>Bojov&eacute; vozy využ&iacute;valy už arm&aacute;dy starověku např. syrsk&eacute;, persk&eacute;, egyptsk&eacute;, apod. To ale byly dvojkolov&eacute; vozy, kter&eacute; se použ&iacute;valy v&nbsp;&uacute;toku. Husitsk&eacute; v&aacute;lečnictv&iacute; v&scaron;ak vy&scaron;lo ze selsk&yacute;ch čtyřkolov&yacute;ch vozů, kter&eacute; se daly použ&iacute;t jak přepravě bojovn&iacute;ků a materi&aacute;lu, ale po doplněn&iacute; o masivn&iacute; okovan&eacute; bočnice, sloužily po vz&aacute;jemn&eacute;m propojen&iacute; jako obrann&yacute; val. Tato defenzivn&iacute; taktika vyhovovala pr&aacute;vě husitům, kteř&iacute; ve vět&scaron;ině bitev bojovali proti &uacute;toč&iacute;c&iacute; přesile protivn&iacute;ka. Proto se Žižka snažil vždy zaujmout, jako prvn&iacute;, strategicky i taktick&yacute; v&yacute;hodn&eacute; n&aacute;vr&scaron;&iacute;, kde postavil vozovou hradbu. T&iacute;m donutil vojsko protivn&iacute;ka &uacute;točit nev&yacute;hodně do kopce, což bylo obt&iacute;žn&eacute; jak pro j&iacute;zdu, tak pro pě&scaron;&iacute; vojsko. Nav&iacute;c, v&nbsp;t&eacute; době nečekaně vysok&yacute;m početn&iacute;m nasazen&iacute;m střeln&yacute;ch zbran&iacute; takto vytvořil &uacute;činnou obranu, proti opakovan&yacute;m &uacute;tokům nepř&iacute;tele. Jakmile se &uacute;toč&iacute;c&iacute; vojsko opakovan&yacute;mi zteči vozov&eacute; hradby vyčerpalo a početně zmen&scaron;ilo, za&uacute;točila na něj husitsk&aacute; j&iacute;zda a husitsk&eacute; pě&scaron;&iacute; odd&iacute;ly.</p>
+	<p>Bohužel se z&nbsp;husitsk&eacute; doby nedochoval ž&aacute;dn&aacute; podrobn&yacute; technick&yacute; popis jak husitsk&eacute;ho v&aacute;lečn&eacute;ho vozu, tak detailn&iacute; popis husitsk&eacute; vozov&eacute; hradby, ani nějak&eacute; jejich kvalitn&iacute; obrazov&eacute; zachycen&iacute;.&nbsp; Takže repliky, kter&eacute; jsou nad&scaron;enci použ&iacute;v&aacute;ny při rekonstrukci různ&yacute;ch husitsk&yacute;ch bitev na různ&yacute;ch historick&yacute;ch akc&iacute;ch, demonstruj&iacute;, jakou asi pravděpodobně měly tyto vozy podobu.</p>
+	<p>Defenzivn&iacute; taktika husitsk&eacute; vozov&eacute; hradby z bojov&yacute;ch vozů, byla v&nbsp;pozděj&scaron;&iacute;m středověku vytlačena siln&yacute;mi jezdeck&yacute;mi jednotkami a stabiln&iacute;mi dělostřeleck&yacute;mi bateriemi. Novodob&aacute; prvn&iacute; světov&aacute; v&aacute;lka nahradila defenzivn&iacute; &bdquo;husitskou vozovou hradbu&ldquo; &uacute;točnou &bdquo;obrněnou vozbou&ldquo;, ze kter&eacute; byly vytvořeny mobiln&iacute; tankov&eacute; jednotky, navržen&eacute; a vyroben&eacute; s&nbsp;využit&iacute;m modern&iacute;ho strojn&iacute;ho inžen&yacute;rstv&iacute;.</p>
+	<p>V&iacute;ce v&nbsp;nov&eacute; publikaci: Martin Pitro, Petr Vok&aacute;č: Průvodce husitsk&yacute;mi v&aacute;lkami. Praha 2019 Nakladatelstv&iacute; Universum.</p>
+	<p>Na př&iacute;stupu husitů k&nbsp;jejich vyzbrojen&iacute; a boji, je možno obdivovat n&aacute;sleduj&iacute;c&iacute; skutečnosti, slouž&iacute;c&iacute; k&nbsp;inspiraci strojn&iacute;ch inžen&yacute;rů:</p>
+	<ul>
+	<li>Nen&iacute; potřeba vždy &bdquo;vynal&eacute;zat&ldquo; res. vyr&aacute;bět zcela nov&eacute; věci. Husit&eacute; neměli &bdquo;finančn&iacute; prostředky&ldquo; k&nbsp;vyzbrojen&iacute; sv&eacute;ho vojska n&aacute;kupem klasick&yacute;ch zbran&iacute;. Ale husit&scaron;t&iacute; hejtman&eacute; v&nbsp;čele se Žižkou si uvědomili, že k&nbsp;v&yacute;zbroji a k boji je možno použ&iacute;t věci, kter&eacute; sedl&aacute;ci maj&iacute;, jen stač&iacute; k&nbsp;boji selsk&eacute; n&aacute;řad&iacute; l&eacute;pe přizpůsobit. Podobn&yacute; způsob ře&scaron;en&iacute; zopakovali, když se snažili vymyslet, č&iacute;m nahradit drah&aacute; ryt&iacute;řsk&aacute; brněn&iacute;, a schovali se za opevněn&eacute; vozy.</li>
+	<li>Zejm&eacute;na Žižka v&scaron;ak udělal v&yacute;znamn&yacute; krok v&nbsp;tom, že vymyslel taktiku, kter&aacute; využ&iacute;vala přednosti takto z&iacute;skan&eacute; v&yacute;zbroje a ochrany. To byl metodick&yacute; krok! Na ten se často zapom&iacute;n&aacute; a řada techniků a manažerů použ&iacute;v&aacute; a zav&aacute;d&iacute; nov&eacute; věci zastaral&yacute;mi praktikami. V&nbsp;současn&eacute; době je to jeden z&nbsp;probl&eacute;mů, proč v&nbsp;řadě firem se nedař&iacute; zav&aacute;dět pokročil&yacute; koncept Industry 4.0. Nestač&iacute; si jen zakoupit důmysln&eacute; roboty! Je potřeba aplikovat pokročil&eacute; postupy k&nbsp;jejich zaveden&iacute; a přizpůsobit tak&eacute; organizaci firmy a pracovn&iacute; postupy digit&aacute;ln&iacute; v&yacute;robě!</li>
+	</ul>
+
+</div>
+
+<div class="bee-block bee-block-10 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/hradba.png" style="max-width:501px;"/></div>
+<div class="bee-block bee-block-9 bee-paragraph">
+<p style="text-align: center;">Z&aacute;běr z jedn&eacute; repliky husitsk&eacute; bitvy</p>
+</div>
+
+<div class="bee-block bee-block-9 bee-paragraph">
+
+<p><strong>Oba př&iacute;spěvky zpracoval pro členy ASI doc. B. Lacko</strong></p>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-3">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-icons">
+<div class="bee-icon">
+<div class="bee-icon-image"><a href="https://www.designedwithbee.com/" target="_blank" title="Designed with BEE"><img alt="Designed with BEE" height="32px" src="images/bee.png" width="auto"/></a></div>
+<div class="bee-icon-label-right"><a href="https://www.designedwithbee.com/" target="_blank" title="Designed with BEE">Designed with BEE</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
